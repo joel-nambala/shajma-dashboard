@@ -2,6 +2,17 @@
 .sidebar-logo {
   margin-bottom: 2rem;
   padding: 1rem;
+  position: relative;
+}
+
+.close-btn {
+  position: absolute;
+  top: 50%;
+  right: 4%;
+  transform: translateY(-50%);
+  font-size: 1.6rem;
+  cursor: pointer;
+  display: none;
 }
 
 .sidebar-title {
@@ -197,6 +208,8 @@
   margin-top: 2rem;
   box-shadow: 0 2rem 3rem rgba(132, 139, 200, 0.18);
   transition: all 0.3s ease;
+  height: 30rem;
+  overflow: scroll;
 }
 
 .recent-orders-table:hover {
@@ -259,6 +272,17 @@ table thead tr th {
   flex-direction: column;
   gap: 0.6rem;
   align-items: end;
+  position: relative;
+}
+
+.menu-btn {
+  position: fixed;
+  top: 5%;
+  left: 4%;
+  font-size: 1.6rem;
+  cursor: pointer;
+  z-index: 4;
+  display: none;
 }
 
 .profile-img {

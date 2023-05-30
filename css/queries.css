@@ -74,6 +74,15 @@
     min-height: 100vh;
     width: 20rem;
     box-shadow: 0 2rem 3rem rgba(132, 139, 200, 0.18);
-    display: none;
+    transform: translateX(-100%);
+    transition: all 0.4s ease;
+  }
+
+  .menu-btn {
+    display: block;
+  }
+
+  .close-btn {
+    display: block;
   }
 }

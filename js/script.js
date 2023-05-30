@@ -3,6 +3,9 @@
 // Select DOM Elements
 const sidebarLink = document.querySelectorAll('.sidebar-link');
 const recentOrdersBody = document.querySelector('.recent-orders-data');
+const menuBtn = document.querySelector('.menu-btn');
+const closeBtn = document.querySelector('.close-btn');
+const sidebar = document.querySelector('.sidebar');
 
 // State variables
 
@@ -18,6 +21,8 @@ sidebarLink.forEach(function (link) {
 
     sidebarLink.forEach(el => el.classList.remove('active'));
     targetElement.closest('.sidebar-link').classList.add('active');
+
+    // sidebar.style.transform = 'translateX(-100%)';
   });
 });
 
@@ -89,3 +94,11 @@ const getRecentOrders = async function () {
   }
 };
 getRecentOrders();
+
+menuBtn.addEventListener('click', function () {
+  sidebar.style.transform = 'translateX(0)';
+});
+
+closeBtn.addEventListener('click', function () {
+  sidebar.style.transform = 'translateX(-100%)';
+});
