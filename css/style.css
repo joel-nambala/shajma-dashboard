@@ -162,8 +162,29 @@
   margin-top: 4rem;
 }
 
+.recent-orders-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .recent-orders-title {
   font-size: 2rem;
+}
+
+.recent-orders-btn {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1.4rem;
+  text-transform: capitalize;
+  background-color: #198754;
+  color: #fff;
+  padding: 0.6rem 1.2rem;
+  border-radius: 0.4rem;
+}
+
+.recent-orders-btn:hover {
+  background-color: #479f76;
 }
 
 .recent-orders-table {
