@@ -1,8 +1,11 @@
 /* SIDEBAR */
 .sidebar-logo {
-  font-size: 1.6rem;
   margin-bottom: 2rem;
   padding: 1rem;
+}
+
+.sidebar-title {
+  font-size: 2rem;
 }
 
 .sidebar-list {
@@ -368,4 +371,16 @@ table thead tr th {
 
 .analytics-item-customers .analytics-item-icon {
   background-color: #198754;
+}
+
+.analytics-item-online .analytics-item-percentage {
+  color: #224b88;
+}
+
+.analytics-item-offline .analytics-item-percentage {
+  color: #dc3545;
+}
+
+.analytics-item-customers .analytics-item-percentage {
+  color: #198754;
 }

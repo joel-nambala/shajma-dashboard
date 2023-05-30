@@ -1,0 +1,51 @@
+[
+  {
+    "name": "Hp 250 G9 Core i5",
+    "code": "5v3vvfmzu0",
+    "price": 900,
+    "status": "shipped",
+    "payment": "paid"
+  },
+  {
+    "name": "Lenovo Gaming 3 Core i5",
+    "code": "4cu6kafa4a",
+    "price": 1200,
+    "status": "declined",
+    "payment": "refunded"
+  },
+  {
+    "name": "Lenovo ThinkPad X1",
+    "code": "cmxy4ylas8",
+    "price": 2860,
+    "status": "pending",
+    "payment": "due"
+  },
+  {
+    "name": "Lenovo IdeaPad 3",
+    "code": "d737q2hgdc",
+    "price": 360,
+    "status": "shipped",
+    "payment": "paid"
+  },
+  {
+    "name": "Apple MacBook Pro",
+    "code": "f6556q8cno",
+    "price": 2100,
+    "status": "pending",
+    "payment": "due"
+  },
+  {
+    "name": "Apple MacBook Air",
+    "code": "otppk0hyzx",
+    "price": 1070,
+    "status": "shipped",
+    "payment": "paid"
+  },
+  {
+    "name": "ASUS ROG Zephyrus",
+    "code": "l1mr0gz3bv",
+    "price": 2820,
+    "status": "declined",
+    "payment": "refunded"
+  }
+]
