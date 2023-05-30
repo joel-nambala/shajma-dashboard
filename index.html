@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- GOOGLE FONTS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+
+    <!-- ICONS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- JAVASCRIPT -->
+    <script defer src="js/script.js"></script>
+    <title>Dashboard</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- SIDEBAR -->
+      <aside class="sidebar">
+        <div class="sidebar-logo">
+          <h1 class="sidebar-title">SHA<span class="danger">JMA</span></h1>
+        </div>
+        <nav class="sidebar-nav">
+          <ul class="sidebar-list">
+            <li class="sidebar-item">
+              <a href="#" class="sidebar-link active"
+                ><i class="bi bi-grid-fill"></i>Dashboard</a
+              >
+            </li>
+            <li class="sidebar-item">
+              <a href="#" class="sidebar-link"
+                ><i class="bi bi-receipt"></i>Orders</a
+              >
+            </li>
+            <li class="sidebar-item">
+              <a href="#" class="sidebar-link"
+                ><i class="bi bi-people-fill"></i>Customers</a
+              >
+            </li>
+            <li class="sidebar-item">
+              <a href="#" class="sidebar-link"
+                ><i class="bi bi-envelope"></i>Messages</a
+              >
+            </li>
+            <li class="sidebar-item">
+              <a href="#" class="sidebar-link"
+                ><i class="bi bi-receipt"></i>Reports</a
+              >
+            </li>
+            <li class="sidebar-item">
+              <a href="#" class="sidebar-link"
+                ><i class="bi bi-diagram-2"></i>Products</a
+              >
+            </li>
+            <li class="sidebar-item">
+              <a href="#" class="sidebar-link"
+                ><i class="bi bi-bar-chart"></i>Analytics</a
+              >
+            </li>
+            <li class="sidebar-item">
+              <a href="#" class="sidebar-link"
+                ><i class="bi bi-gear"></i>Settings</a
+              >
+            </li>
+            <li class="sidebar-item">
+              <a href="#" class="sidebar-link"
+                ><i class="bi bi-box-arrow-right"></i>Logout</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </aside>
+      <!-- END OF SIDEBAR -->
+      <!-- MAIN -->
+      <main class="dashboard" id="dashboard">
+        <h2 class="secondary-heading dashboard-heading">Dashboard</h2>
+        <input type="date" class="dashboard-date" />
+        <div class="dashboard-cards">
+          <!-- BEGIN OF DASHBOARD CARD -->
+          <div class="dashboard-card dashboard-sales">
+            <div class="dashboard-icon">
+              <i class="bi bi-clipboard-data"></i>
+            </div>
+            <div class="dashboard-info">
+              <div class="dashboard-statistics">
+                <h3 class="dashboard-title">Total sales</h3>
+                <p class="dashboard-value">$56,678</p>
+              </div>
+              <div class="dashboard-progress">
+                <svg>
+                  <circle cx="38" cy="38" r="36"></circle>
+                </svg>
+                <p class="dashboard-percentage">81%</p>
+              </div>
+            </div>
+            <p class="text-muted">Last 24 hours</p>
+          </div>
+          <!-- END OF DASHBOARD CARD -->
+          <div class="dashboard-card dashboard-expenses">
+            <div class="dashboard-icon">
+              <i class="bi bi-bar-chart-fill"></i>
+            </div>
+            <div class="dashboard-info">
+              <div class="dashboard-statistics">
+                <h3 class="dashboard-title">Total expenses</h3>
+                <p class="dashboard-value">$42,900</p>
+              </div>
+              <div class="dashboard-progress">
+                <svg>
+                  <circle cx="38" cy="38" r="36"></circle>
+                </svg>
+                <p class="dashboard-percentage">56%</p>
+              </div>
+            </div>
+            <p class="text-muted">Last 24 hours</p>
+          </div>
+          <!-- END OF DASHBOARD CARD -->
+          <div class="dashboard-card dashboard-income">
+            <div class="dashboard-icon">
+              <i class="bi bi-graph-up"></i>
+            </div>
+            <div class="dashboard-info">
+              <div class="dashboard-statistics">
+                <h3 class="dashboard-title">Total income</h3>
+                <p class="dashboard-value">$12,565</p>
+              </div>
+              <div class="dashboard-progress">
+                <svg>
+                  <circle cx="38" cy="38" r="36"></circle>
+                </svg>
+                <p class="dashboard-percentage">32%</p>
+              </div>
+            </div>
+            <p class="text-muted">Last 24 hours</p>
+          </div>
+          <!-- END OF DASHBOARD CARD -->
+        </div>
+
+        <div class="recent-orders">
+          <h2 class="dashboard-title recent-orders-title">Recent orders</h2>
+          <div class="recent-orders-table">
+            <table>
+              <thead>
+                <tr>
+                  <th>Product name</th>
+                  <th>Product code</th>
+                  <th>Status</th>
+                  <th>Payment</th>
+                  <th>&nbsp;</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Macbook Pro Air</td>
+                  <td>REC598U7</td>
+                  <td class="warning">Pending</td>
+                  <td>Due</td>
+                  <td>
+                    <a href="#" class="table-link">Details</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Lennovo Core i3</td>
+                  <td>RED56YT3</td>
+                  <td class="success">Shipped</td>
+                  <td>Paid</td>
+                  <td>
+                    <a href="#" class="table-link">Details</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Lennovo Core i3</td>
+                  <td>RED56YT3</td>
+                  <td class="danger">Declined</td>
+                  <td>Refunded</td>
+                  <td>
+                    <a href="#" class="table-link">Details</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Lennovo Core i3</td>
+                  <td>RED56YT3</td>
+                  <td class="success">Shipped</td>
+                  <td>Paid</td>
+                  <td>
+                    <a href="#" class="table-link">Details</a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <a href="" class="recent-orders-link">Show All</a>
+        </div>
+      </main>
+      <!-- END OF MAIN -->
+      <!-- RIGHT SECTION -->
+      <section class="right">
+        <div class="profile">
+          <div class="profile-info">
+            <p class="profile-greeting">
+              Hello, <b class="profile-name">Halima</b>
+            </p>
+            <p class="profile-user">Admin</p>
+          </div>
+          <img
+            src="./img/profile-3.jpeg"
+            alt="User photo"
+            class="profile-img"
+          />
+        </div>
+        <div class="updates">
+          <h2 class="secondary-heading updates-title">Recent updates</h2>
+          <div class="update">
+            <div>
+              <img
+                src="./img/profile-1.jpg"
+                alt="User profile"
+                class="update-img"
+              />
+              <div class="update-info">
+                <p class="update-text">
+                  <b>John Mathew</b> recieved his order of Macbook Pro Air
+                </p>
+                <p class="text-muted">4 minutes ago</p>
+              </div>
+            </div>
+            <div>
+              <img
+                src="./img/profile-4.jpg"
+                alt="User profile"
+                class="update-img"
+              />
+              <div class="update-info">
+                <p class="update-text">
+                  <b>Mark Miller</b> recieved his order of Macbook Pro Air
+                </p>
+                <p class="text-muted">6 minutes ago</p>
+              </div>
+            </div>
+            <div>
+              <img
+                src="./img/profile-2.jpg"
+                alt="User profile"
+                class="update-img"
+              />
+              <div class="update-info">
+                <p class="update-text">
+                  <b>Jessica Jones</b> recieved her order of Lenovo Core i3
+                </p>
+                <p class="text-muted">10 minutes ago</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="analytics">
+          <h2 class="secondary-heading analytics-heading">Sales analytics</h2>
+          <div class="analytics-item analytics-item-online">
+            <div class="analytics-item-icon">
+              <i class="bi bi-cart-check"></i>
+            </div>
+            <div class="analytics-item-info">
+              <h4 class="analytics-item-title">Online sales</h4>
+              <p class="text-muted" style="margin-top: 0.2rem">Last 24 hours</p>
+            </div>
+            <h4 class="analytics-item-percentage">+45%</h4>
+            <h4 class="analytics-item-amount">$4,200</h4>
+          </div>
+          <div class="analytics-item analytics-item-offline">
+            <div class="analytics-item-icon">
+              <i class="bi bi-bag-check"></i>
+            </div>
+            <div class="analytics-item-info">
+              <h4 class="analytics-item-title">Offline sales</h4>
+              <p class="text-muted" style="margin-top: 0.2rem">Last 24 hours</p>
+            </div>
+            <h4 class="analytics-item-percentage">+21%</h4>
+            <h4 class="analytics-item-amount">$2,100</h4>
+          </div>
+          <div class="analytics-item analytics-item-customers">
+            <div class="analytics-item-icon">
+              <i class="bi bi-person-fill"></i>
+            </div>
+            <div class="analytics-item-info">
+              <h4 class="analytics-item-title">New customers</h4>
+              <p class="text-muted" style="margin-top: 0.2rem">Last 24 hours</p>
+            </div>
+            <h4 class="analytics-item-percentage">+10%</h4>
+            <h4 class="analytics-item-number">230</h4>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

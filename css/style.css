@@ -1,0 +1,350 @@
+/* SIDEBAR */
+.sidebar-logo {
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+  padding: 1rem;
+}
+
+.sidebar-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+}
+
+.sidebar-item {
+  font-size: 1.4rem;
+}
+
+.sidebar-link {
+  text-decoration: none;
+  color: #052c65;
+  height: 4.2rem;
+  width: 100%;
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.sidebar-link:hover {
+  background-color: #d9e5f7;
+}
+
+.sidebar-link i {
+  margin-right: 0.6rem;
+}
+
+/* MAIN */
+.dashboard-heading {
+  font-size: 2.6rem;
+}
+
+.dashboard-date {
+  background-color: #dadde0;
+  border: none;
+  border-radius: 2px;
+  padding: 0.6rem 0.8rem;
+  outline: none;
+  margin-top: 1.4rem;
+  font-family: inherit;
+}
+
+.dashboard-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.dashboard-card {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 2rem 3rem rgba(132, 139, 200, 0.18);
+  margin-top: 2rem;
+  transition: all 0.3s ease;
+}
+
+.dashboard-card:hover {
+  box-shadow: none;
+}
+
+.dashboard-icon {
+  width: 4rem;
+  height: 4rem;
+  font-size: 1.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.dashboard-sales .dashboard-icon {
+  background-color: #5d79a3;
+}
+
+.dashboard-expenses .dashboard-icon {
+  background-color: #dc3545;
+}
+
+.dashboard-income .dashboard-icon {
+  background-color: #198754;
+}
+
+.dashboard-icon i {
+  color: #fff;
+}
+
+.dashboard-info {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.dashboard-title {
+  font-size: 1.8rem;
+  text-transform: capitalize;
+  margin-bottom: 0.8rem;
+}
+
+.dashboard-value {
+  font-weight: 800;
+  font-size: 2.4rem;
+}
+
+.dashboard-progress {
+  width: 9rem;
+  height: 9rem;
+  border-radius: 50%;
+  position: relative;
+}
+
+.dashboard-progress svg {
+  width: 9rem;
+  height: 9rem;
+}
+
+.dashboard-progress svg circle {
+  fill: none;
+  stroke: #687e9e;
+  stroke-width: 14;
+  stroke-linecap: round;
+  transform: translate(5px, 5px);
+}
+
+.dashboard-sales circle {
+  stroke-dasharray: 200;
+  stroke-dashoffset: -30;
+}
+
+.dashboard-expenses circle {
+  stroke-dasharray: 80;
+  stroke-dashoffset: 20;
+}
+
+.dashboard-income circle {
+  stroke-dasharray: 100;
+  stroke-dashoffset: 4;
+}
+
+.dashboard-percentage {
+  position: absolute;
+  top: 42%;
+  left: 40%;
+}
+
+.text-muted {
+  font-size: 1.2rem;
+  color: #777;
+}
+
+.recent-orders {
+  margin-top: 4rem;
+}
+
+.recent-orders-title {
+  font-size: 2rem;
+}
+
+.recent-orders-table {
+  background-color: #fff;
+  border-radius: 0.8rem;
+  padding: 1.4rem 0;
+  margin-top: 2rem;
+  box-shadow: 0 2rem 3rem rgba(132, 139, 200, 0.18);
+  transition: all 0.3s ease;
+}
+
+.recent-orders-table:hover {
+  box-shadow: none;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 1.4rem;
+}
+
+th,
+td {
+  padding: 0.8rem 1.6rem;
+  text-align: left;
+}
+
+tbody tr {
+  border-bottom: 0.7px solid rgba(132, 139, 200, 0.18);
+}
+
+tbody tr:last-child {
+  border-bottom: none;
+}
+
+tbody tr:hover {
+  background-color: rgba(132, 139, 200, 0.1);
+}
+
+table thead tr th {
+  text-transform: capitalize;
+}
+
+.table-link {
+  text-decoration: none;
+  color: #052c65;
+}
+
+.recent-orders-link {
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 1.4rem;
+}
+
+/* SECTION RIGHT */
+.profile {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 1.2rem;
+  cursor: pointer;
+}
+
+.profile-info {
+  font-size: 1.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  align-items: end;
+}
+
+.profile-img {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+}
+
+.updates {
+  margin-top: 2.2rem;
+}
+
+.updates-title {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.update {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 0.6rem;
+  box-shadow: 0 2rem 3rem rgba(132, 139, 200, 0.18);
+  transition: all 0.3s ease;
+}
+
+.update:hover {
+  box-shadow: none;
+}
+
+.update > div {
+  display: flex;
+  gap: 1rem;
+}
+
+.update > div:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.update-img {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+}
+
+.update-text {
+  font-size: 1.2rem;
+  margin-bottom: 0.6rem;
+}
+
+.analytics {
+  margin-top: 2.2rem;
+}
+
+.analytics-heading {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.analytics-item {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 0.6rem;
+  box-shadow: 0 2rem 3rem rgba(132, 139, 200, 0.18);
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  transition: all 0.3s ease;
+}
+
+.analytics-item:hover {
+  box-shadow: none;
+}
+
+.analytics-item:not(:last-child) {
+  margin-bottom: 1.6rem;
+}
+
+.analytics-item-icon {
+  color: #fff;
+  width: 4rem;
+  height: 4rem;
+  font-size: 1.8rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.analytics-item-title {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}
+
+.analytics-item-percentage {
+  font-size: 1.1rem;
+}
+
+.analytics-item-amount,
+.analytics-item-number {
+  font-size: 1.2rem;
+}
+
+.analytics-item-online .analytics-item-icon {
+  background-color: #224b88;
+}
+
+.analytics-item-offline .analytics-item-icon {
+  background-color: #dc3545;
+}
+
+.analytics-item-customers .analytics-item-icon {
+  background-color: #198754;
+}
